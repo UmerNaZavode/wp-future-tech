@@ -1,0 +1,63 @@
+@use '../helpers' as *;
+
+.soc1als {
+  width: 100%;
+  max-width: rem(308);
+
+  &--3-cols {
+    .soc1als {
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: rem(10);
+
+        @include laptop {
+          column-gap: rem(10);
+        }
+      }
+      
+      &__link {
+        width: 100%;
+        height: rem(60);
+        border: var(--border);
+        border-radius: rem(6);
+        background-color: var(--color-dark-10);
+
+        @include flex-center;
+
+        @include laptop {
+          height: rem(48);
+        }
+
+        @include hover {
+          border-color: var(--color-accent);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: rem(20);
+
+    @include laptop {
+      column-gap: rem(14);
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    --size: #{rem(24)};
+
+    color: var(--color-light);
+
+    @include square(var(--size));
+
+    @include laptop {
+      --size: #{rem(20)};
+    }
+  }
+}

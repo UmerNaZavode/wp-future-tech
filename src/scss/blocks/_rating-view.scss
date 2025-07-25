@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.rating-view {
+  display: inline-flex;
+  padding: rem(10) rem(16);
+  border: var(--border);
+  border-radius: rem(100);
+  background-color: var(--color-dark);
+  column-gap: rem(7);
+
+
+  @include laptop {
+    padding: rem(8) rem(12);
+    column-gap: rem(4);
+  }
+
+  &__star {
+    --size: #{rem(24)};
+
+    background: url('/src/icons/star_gray.svg') center/contain no-repeat;
+
+    @include square(var(--size));
+
+    @include laptop {
+      --size: #{rem(20)};
+    }
+
+  }
+}

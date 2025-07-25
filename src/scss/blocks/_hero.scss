@@ -1,0 +1,137 @@
+@use '../helpers' as *;
+
+.hero {
+  &__main {
+    @include tablet-above {
+      display: grid;
+      grid-template-areas:
+      'body resources-preview'
+      'metrics resources-preview';
+      grid-template-columns: 60% auto;
+    }
+  }
+
+  &__body {
+    grid-area: body;
+    padding-bottom: rem(100);
+    padding-right: rem(50);
+    padding-top: rem(150);
+
+    @include laptop {
+      padding-right: rem(40);
+      padding-top: rem(100);
+
+      @include tablet {
+        padding-bottom: rem(30);
+        padding-right: 0;
+        padding-top: rem(40);
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    color: var(--color-dark-40);
+
+    @include fluid-text(30, 18);
+
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+
+      @include mobile {
+        margin-bottom: rem(14);
+      }
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+
+      @include mobile {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  &__metrics {
+    grid-area: metrics;
+
+    @include tablet-above {
+      border-top: var(--border);
+    }
+
+    @include tablet {
+      &::before {
+        right: calc(var(--container-padding-x) * -1);
+        width: 100vw;
+      }
+    }
+  }
+
+  &__resources-preview {
+    grid-area: resources-preview;
+    padding-bottom: rem(80);
+    padding-left: rem(80);
+
+    @include laptop {
+      padding-bottom: rem(50);
+      padding-left: rem(50);
+    }
+
+    @include tablet-above {
+      border-left: var(--border);
+    }
+
+    @include tablet {
+      width: 100vw;
+      padding: rem(100) rem(40) rem(40);
+      /* background-image: url('/src/images/resources-preview/bg_tablet.png'); */
+      background-size: contain;
+      margin-left: calc(var(--container-padding-x) * -1);
+    }
+  }
+
+  &__advantages {
+    border-block: var(--border);
+
+    &-list {
+      @include tablet-above {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &-item {
+      --paddingX: #{rem(80)};
+
+      padding-block: rem(50);
+
+      @include laptop {
+        --paddingX: #{rem(50)};
+
+        padding-block: rem(40);
+      }
+
+      @include tablet-above {
+        &:not(:first-child) {
+          padding-left: var(--paddingX);
+        }
+
+        &:not(:last-child) {
+          border-right: var(--border);
+          padding-right: var(--paddingX);
+        }
+      }
+
+      @include tablet {
+        padding-block: rem(30);
+
+        &:not(:last-child) {
+          border-bottom: var(--border);
+        }
+      }
+    }
+  }
+}
