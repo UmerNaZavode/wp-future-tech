@@ -87,6 +87,7 @@
     @include tablet {
       width: 100vw;
       padding: rem(100) rem(40) rem(40);
+
       /* background-image: url('/src/images/resources-preview/bg_tablet.png'); */
       background-size: contain;
       margin-left: calc(var(--container-padding-x) * -1);

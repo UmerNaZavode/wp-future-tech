@@ -5,7 +5,7 @@ if (!defined('_S_VERSION')) {
   define('_S_VERSION', '1.0.0');
 }
 
-$vite_dev = true;
+$vite_dev = false;
 
 define('IS_VITE_DEVELOPMENT', $vite_dev);
 

@@ -1,0 +1,36 @@
+@use '../../helpers' as *;
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  column-gap: rem(16);
+
+  @media screen and (max-width: 992px) {
+    column-gap: rem(6);
+  }
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  li.current-menu-item {
+    a {
+      font-weight: 500;
+      color: var(--color-light);
+      border: var(--border);
+      border-radius: rem(10);
+      background-color: var(--color-dark);
+      pointer-events: none;
+    }
+  }
+
+  a {
+    padding: rem(14) rem(24);
+    color: var(--color-gray-50);
+
+    @media screen and (max-width: 992px) {
+      padding: rem(10) rem(18);
+    }
+  }
+}

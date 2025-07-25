@@ -1,6 +1,9 @@
 @use 'normalize';
 @use 'variables';
 @use 'utils';
+@use "helpers/functions";
+@use "helpers/media";
+@use "helpers/mixins";
 @use 'globals';
 @use "blocks/expandable-content";
 @use 'blocks/icon';
@@ -48,3 +51,4 @@
 @use "blocks/accordion";
 @use "blocks/accordion-group";
 @use "blocks/contacts";
+@use "blocks/menu/main-menu";
