@@ -21,29 +21,7 @@
           <?php get_template_part('template-parts/footer/footer-right'); ?>
         </div>
         <div class="footer__menu-column">
-          <a href="/" class="footer__menu-main-link h6">Resources</a>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link button">
-                <span class="icon icon--yellow-arrow">Whitepapers</span>
-              </a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link button">
-                <span class="icon icon--yellow-arrow">Ebooks</span>
-              </a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link button">
-                <span class="icon icon--yellow-arrow">Reports</span>
-              </a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link button">
-                <span class="icon icon--yellow-arrow">Research Papers</span>
-              </a>
-            </li>
-          </ul>
+          <!-- <a href="/" class="footer__menu-main-link h6">Resources</a> -->
         </div>
       </nav>
     </div>

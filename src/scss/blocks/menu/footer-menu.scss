@@ -1,0 +1,24 @@
+@use '../../helpers' as *;
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(18, 8);
+
+  li {
+    display: flex;
+    align-items: center;
+    column-gap: rem(8);
+
+    &:nth-of-type(1) {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.125rem;
+      color: #fff;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

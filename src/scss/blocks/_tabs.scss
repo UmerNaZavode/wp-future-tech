@@ -11,8 +11,8 @@
 
   &__buttons {
     display: grid;
-    column-gap: rem(20);
     grid-template-columns: repeat(6, 1fr);
+    column-gap: rem(20);
     padding-block: fluid(50, 20);
 
     @include laptop {
@@ -32,7 +32,7 @@
 
       .tabs__button {
         padding-block: rem(18);
-        
+
         @include laptop {
           padding-block: rem(14);
         }
@@ -45,6 +45,8 @@
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
     padding: fluid(30, 18) rem(11);
     font-size: rem(18);
     color: var(--color-gray-60);

@@ -39,17 +39,6 @@
       }
     }
 
-    &-list {
-      display: flex;
-      flex-direction: column;
-      row-gap: fluid(18, 8);
-    }
-
-    &-item {
-      display: flex;
-      align-items: center;
-      column-gap: rem(8);
-    }
   }
 
   &__extra {

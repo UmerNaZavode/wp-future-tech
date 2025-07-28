@@ -21,13 +21,5 @@
       --size: #{rem(20)};
     }
   }
-
-
-
-  &--gray-arrow-down {
-    &::after {
-      background-image: url("/src/icons/arrow-down_gray.svg");
-    }
-  }
 }
 

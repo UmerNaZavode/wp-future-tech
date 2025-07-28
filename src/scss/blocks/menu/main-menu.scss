@@ -28,6 +28,7 @@
   a {
     padding: rem(14) rem(24);
     color: var(--color-gray-50);
+    text-decoration: none;
 
     @media screen and (max-width: 992px) {
       padding: rem(10) rem(18);

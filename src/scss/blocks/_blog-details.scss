@@ -2,24 +2,35 @@
 
 .blog-details {
   &__banner {
+    position: relative;
     display: flex;
     align-items: end;
     min-height: fluid(598, 281);
-    background:
-      linear-gradient(
+    padding-block: fluid(65, 17);
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
         180deg,
         rgb(20, 20, 20, 0%) 0%,
         rgb(20, 20, 20, 88%) 75.52%,
         #141414 100%
-      ),
-      var(--bgImg) center/cover no-repeat;
-    padding-block: fluid(65, 17);
-    text-align: center;
+      );
+    }
   }
 
   &__title {
+    position: relative;
     font-family: var(--font-family-base);
     font-weight: 600;
+    z-index: 2;
 
     @include fluid-text(64, 28);
   }
@@ -104,4 +115,3 @@
     }
   }
 }
-

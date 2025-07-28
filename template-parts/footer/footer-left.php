@@ -4,7 +4,7 @@
   'container' => '',
   'container_class' => '',
   'container_id' => '',
-  'menu_class' => 'footer__menu-list',
+  'menu_class' => 'footer-menu',
   'menu_id' => 'js-main-menu',
   'echo' => true,
   'fallback_cb' => 'wp_page_menu',

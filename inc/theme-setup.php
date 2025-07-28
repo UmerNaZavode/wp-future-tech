@@ -30,7 +30,7 @@ function ag_future_tech_setup()
       'footer-center-left' => esc_html__('Footer Center Left', 'ag-future-tech'),
       'footer-center-right' => esc_html__('Footer Center Right', 'ag-future-tech'),
       'footer-right' => esc_html__('Footer Right', 'ag-future-tech'),
-      'footer-links' => esc_html__('Footer Links', 'ag-future-tech'),
+      'footer-resources' => esc_html__('Footer Resources', 'ag-future-tech'),
     )
   );
 
