@@ -70,6 +70,10 @@
   }
 
   &__soc1als {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @include mobile {
       order: -1;
     }
