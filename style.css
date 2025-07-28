@@ -234,3 +234,15 @@ Version: 0.4
 .blog-details__banner {
   background-image: url('src/images/blog-details/banner.jpg');
 }
+
+.footer-resources a::after {
+  content: '';
+  position: absolute;
+  flex-shrink: 0;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 10;
+  background-image: url('src/icons/arrow-top-right_yellow.svg');
+  background-repeat: no-repeat;
+}

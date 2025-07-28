@@ -1,5 +1,5 @@
 <?php wp_nav_menu([
-  'theme_location' => 'footer-links',
+  'theme_location' => 'footer-resources',
   'menu' => '',
   'container' => '',
   'container_class' => '',

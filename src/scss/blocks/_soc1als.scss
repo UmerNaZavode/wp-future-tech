@@ -15,13 +15,25 @@
           column-gap: rem(10);
         }
       }
-      
+
       &__link {
+        position: relative;
         width: 100%;
         height: rem(60);
         border: var(--border);
         border-radius: rem(6);
         background-color: var(--color-dark-10);
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          translate: -50% -50%;
+          display: block;
+          width: rem(44);
+          height: rem(44);
+        }
 
         @include flex-center;
 
@@ -49,15 +61,25 @@
     display: flex;
   }
 
-  &__link {
-    --size: #{rem(24)};
+  /* &__link { */
+  /*   --size: #{rem(24)}; */
+  /**/
+  /*   color: var(--color-light); */
+  /**/
+  /*   @include square(var(--size)); */
+  /**/
+  /*   @include laptop { */
+  /*     --size: #{rem(20)}; */
+  /*   } */
+  /* } */
 
-    color: var(--color-light);
-
-    @include square(var(--size));
+  &__img {
+    width: rem(24);
+    height: rem(24);
 
     @include laptop {
-      --size: #{rem(20)};
-    }
+    width: rem(20);
+    height: rem(20);
+    } 
   }
 }

@@ -29,8 +29,7 @@
   }
 
   &__rating-view {
-    top: 0;
-
     @include abs-center;
+    top: 0;
   }
 }

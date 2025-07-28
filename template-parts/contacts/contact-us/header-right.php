@@ -16,7 +16,7 @@ $items = $connect_with_us['items'];
           $url = $item['url'];
           ?>
           <li class="soc1als__item">
-            <a class="soc1als__link" href="<?php echo $url; ?>" target="_blank" aria-label="Twitter" title="Twitter">
+            <a class="soc1als__link" href="<?php echo $url; ?>" target="_blank">
               <img src="<?php echo $icon; ?>" alt="" class="soc1als__img">
             </a>
           </li>
